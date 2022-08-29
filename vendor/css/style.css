@@ -1,0 +1,643 @@
+body{
+  background: black;
+  color: white;
+}
+.preload *{
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+.container-lg{
+  max-width: 1450px;
+}
+.top-contract{
+  color: #a1a1a1;
+  padding: 10px;
+  font-size: 13px;
+  background: #330008;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.top-nav{
+  position: fixed;
+  z-index: 30;
+  top: 0%;
+  width: 100%;
+}
+.nav-menu{
+  padding: 20px;
+  background: none;
+  transition: 0.3s;
+}
+.nav-brand{
+  display: flex;
+  align-items: center;
+}
+.nav-brand img{
+  width: 50px;
+  border-radius: 10px;
+}
+.nav-menu-inner{
+  display: flex;
+  align-items: center;
+}
+.menu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.menu li{
+  margin-right: 15px;
+  position: relative;
+  padding: 10px;
+}
+.menu li::before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background: red;
+  bottom: 0%;
+}
+.menu li a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.menu li a:hover{
+  color: #DD0024;
+}
+.top-contract.scroll{
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
+.nav-menu.scroll{
+  padding: 10px;
+}
+.nav-menu.black{
+  background: black;
+}
+.nav-menu-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.connect-btn{
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 7px 20px;
+  transition: 0.3s;
+  font-weight: bold;
+  border: 3px solid black;
+}
+.connect-btn:hover{
+  background: none;
+  color: black;
+}
+.connect-btn.scroll{
+  background: #DD0024;
+  color: white;
+  border-color: #DD0024;
+}
+.connect-btn.scroll:hover{
+  background: none;
+  color: #DD0024;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-menu-inner{
+  width: 100%;
+}
+.menu-toggle{
+  display: none;
+}
+@media only screen and (max-width: 990px){
+  .nav-right{
+    position: fixed;
+    height: 100vh;
+    background: black;
+    right: 0%;
+    top: 0%;
+    display: block;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 300px;
+    transform: translateX(300px);
+  }
+  .menu-wrap{
+    padding: 70px 30px;
+  }
+  .nav-right.active{
+    transform: translateX(0px);
+  }
+  .menu{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .menu li::before{
+    width: 20%;
+  }
+  .connect-btn{
+    background: #DD0024;
+    color: white;
+    width: 100%;
+    border-color: #DD0024;
+  }
+  .connect-btn:hover{
+    background: none;
+    color: #DD0024;
+  }
+  .nav-menu-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-toggle{
+    display: block;
+    color: gray;
+    transition: 0.3s;
+  }
+  .menu-toggle:hover{
+    color: lightgray;
+  }
+  .nav-pad{
+    padding: 1.5rem;
+  }
+  .top-contract{
+    font-size: 10px!important;
+  }
+}
+a{
+  cursor: pointer;
+}
+.copy{
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  background: #DD0024;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.copy.copied{
+  opacity: 1;
+}
+#banner{
+   height: 90vh;
+   position: relative;
+}
+.banner-header{
+  font-weight: bold;
+}
+.container-sm{
+  max-width: 1200px;
+}
+.gray{
+  color: gray;
+}
+.lightgray{
+  color: lightgray;
+}
+.darkgray{
+  color: darkgray;
+}
+.red{
+  color: #DD0024;
+}
+.banner-button-wrap{
+  display: flex;
+  align-items: center;
+}
+.banner-button{
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #DD0024;
+  color: white;
+  border:3px solid #DD0024;
+  margin-right: 15px;
+  border-color: #DD0024;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.banner-button:hover{
+  background: white;
+  color: black;
+  border-color: white;
+}
+.red-outline{
+  color: #DD0024;
+  background: none;
+}
+.red-outline:hover{
+  color: white;
+  background: #DD0024;
+  border-color: #DD0024;
+}
+@media only screen and (max-width: 468px){
+  .banner-button{
+    padding: 5px 10px;
+    font-size: 13px;
+    margin: 0;
+  }
+  .banner-button-wrap{
+    justify-content: space-between;
+  }
+  .banner-sub{
+    font-size: 13px;
+  }
+}
+
+.banner-left{
+  z-index: -10;
+  position: absolute;
+  height: 100%;
+  right: 0%;
+}
+.banner-left img{
+  height: 100%;
+  transform: rotateY(180deg);
+}
+@media only screen and (min-width: 767px){
+  .banner-header{
+    font-size: 65px;
+  }
+
+}
+.banner-logo{
+  width: 100%;
+}
+.banner-logo1{
+  display: none;
+}
+@media only screen and (max-width: 990px){
+  .banner-left{
+    display: none;
+  }
+  .banner-left img{
+    display: none;
+  }
+  .red-white{
+    color: white;
+  }
+  .banner-header{
+    text-align: center;
+  }
+  .banner-sub{
+    text-align: center;
+  }
+  .container-sm-sm{
+    padding: 30px;
+  }
+  #banner{
+    height: 100vh;
+  }
+  .banner-logo{
+    width: 200px;
+  }
+  .banner-logo{
+    display: none;
+  }
+  .banner-logo1{
+    display: block;
+  }
+  .banner-margin{
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+#section-2{
+  padding: 80px 0px;
+}
+.width-medium{
+  width: 900px;
+}
+.glass-card{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.6px);
+  -webkit-backdrop-filter: blur(12.6px);
+}
+.quotes{
+  position: relative;
+  padding: 100px;
+}
+.quote{
+  position: absolute;
+}
+.q-top{
+  top:5%;
+  left: 5%;
+}
+.q-bot{
+  bottom: 5%;
+  right: 5%;
+  transform: rotateZ(180deg);
+}
+.quote img{
+  width: 80px;
+}
+.card-pad{
+  padding: 50px;
+}
+@media only screen and (max-width: 768px){
+  .card-pad{
+    padding: 20px;
+  }
+  .quotes{
+    padding: 70px;
+  }
+  .quote img{
+    width: 60px;
+  }
+}
+.accel1{
+  font-size: 20px;
+}
+.accel{
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px){
+  .accel{
+    font-size: 13px;
+  }
+  .accel1{
+    font-size: 15px;
+  }
+}
+#section-3{
+  position: relative;
+  overflow: hidden;
+}
+#section-3p{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.cracks{
+  height: 100%;
+  background: white;
+  position: absolute;
+  width: 100%;
+  background-color: #DD0024;
+  z-index: -1;
+}
+.cracks img:first-child{
+  position: absolute;
+  top: 0%;
+}
+.cracks img:last-child{
+  position: absolute;
+  bottom: 0%;
+  transform: rotateZ(180deg);
+}
+.featured{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featured img{
+  max-width: 400px;
+}
+@media only screen and (max-width: 768px){
+  .featured img{
+    max-width: 300px;
+  }
+}
+#section-4{
+  padding: 80px 0;
+}
+.phone img{
+  width: 300px;
+}
+@media only screen and (max-width: 768px){
+  .phone img{
+    width: 60%;
+  }
+  .defi{
+    font-size: 16px;
+  }
+}
+.line{
+  height: 3px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(93,0,15,1) 10%, rgba(221,0,36,1) 50%, rgba(199,0,32,1) 75%, rgba(0,0,0,1) 100%);
+}
+#section-5{
+  padding: 80px 0;
+}
+.card-img{
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background: #DD0024;
+  padding: 30px 0;
+  clip-path: polygon(0 0, 100% 0, 83% 80%, 0% 100%);
+}
+.card-img img{
+  height: 120%;
+  margin-right: 100px;
+}
+@media only screen and (max-width: 768px){
+  .card-img img{
+    height: 150%;
+    margin-right: 100px;
+  }
+}
+.dark-card{
+  overflow: hidden;
+  background: #1f1f1f;
+  border-radius: 30px;
+}
+#section-6{
+  position: relative;
+  overflow: hidden;
+}
+#section-6p{
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+.road{
+  height: 100%;
+  background: white;
+  position: absolute;
+  width: 100%;
+  background-color: #DD0024;
+  z-index: -1;
+}
+.road img:first-child{
+  position: absolute;
+  top: 0%;
+}
+.road img:last-child{
+  position: absolute;
+  bottom: 0%;
+  transform: rotateZ(180deg);
+}
+@media only screen and (max-width: 990px){
+  #section-6p{
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .road img{
+    width: 100%;
+  }
+}
+footer{
+  padding: 80px 0;
+}
+.footer-img{
+  display: flex;
+  align-items: center;
+}
+.footer-img img:first-child{
+  width: 100px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.footer-img img:last-child{
+  width: 150px;
+}
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.socials li{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #DD0024;
+  border-radius: 10%;
+  background: #DD0024;
+  margin: 0 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.socials li:hover{
+  background: none;
+}
+.socials li:hover i{
+  color: #DD0024;
+}
+.socials li a{
+  display: block;
+}
+.socials li a i{
+  font-size: 25px;
+  color: white;
+}
+.banner-header1{
+  font-size: 40px;
+}
+@media only screen and (max-width: 990px){
+  .banner-header1{
+    font-size: 20px;
+  }
+}
+.accel-btn{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background: black;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border-color: black;
+  transition: 0.3s;
+}
+.accel-btn i{
+  margin-left: 5px;
+  font-size: 20px;
+}
+.accel-btn:hover{
+  color: black;
+  border-color: white;
+  background: white;
+}
+.accel-btn:hover i{
+  color: black;
+}
+@media only screen and (max-width: 768px){
+  .accel-btn{
+    font-size: 13px;
+  }
+  .accel-btn i{
+    margin-left: 5px;
+    font-size: 15px;
+  }
+}
+.roadmap-header{
+  font-size: 120px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+}
+.roadmap-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 4px solid maroon;
+}
+.roadmap-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px solid maroon;
+}
+.roadmap-card{
+  padding: 20px 10px;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  background: black;
+}
+.roadmap-card2{
+  padding: 20px 10px;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  background: black;
+}
+.roadmap-list{
+  color: lightgray;
+  list-style: inside;
+  list-style-type: square;
+}
+@media only screen and (max-width: 990px) {
+  .roadmap-header{
+    font-size: 50px;
+  }
+  .roadmap-left, .roadmap-right{
+    border: 0;
+  }
+  #section-6p{
+    padding-bottom: 100px;
+  }
+  .roadmap-list{
+    font-size: 13px;
+    list-style: outside;
+  }
+  .roadmap-card,
+  .roadmap-card2{
+    padding: 20px;
+    border-radius: 10px;
+  }
+}

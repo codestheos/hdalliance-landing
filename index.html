@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Hodln Defi</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/icon-font/demo/css/style.css">
+    <link rel="stylesheet" href="vendor/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.css" integrity="sha512-0NAGYb8jB+yyrAy+JkMQgy4KzQiCuVSCpGkvRMdbQJGjEzxCoIvGujt50fLh+yeFu/xNdMmJYQSJGa4GIlRNcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.theme.default.min.css" integrity="sha512-0AyL4lDHb+ytzn5Ygvvie+ThlNNVAoEQ6e/ZjP8Uoi+goYM1Wzb1VS3vga3ORrLXtyxflJ41bm6v1WY8m9gpdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="vendor/js/bootstrap.min.js">
+    </script>
+    <script src="vendor/js/jquery.js">
+    </script>
+    <script src="vendor/icons/js/all.js">
+    </script>
+    <link rel="stylesheet" href="vendor/css/style.css">
+  </head>
+  <body class="preload">
+    <div class="top-nav">
+      <div class="top-nav-outer">
+        <div class="top-nav-inner">
+          <div class="top-contract">
+            <div class="container container-lg d-flex align-items-center">
+              Contract: BNBChain (BEP20) address
+              <div class="ms-4 d-flex align-items-center">
+                <span class="me-2"><img src="images/bnb.svg" style="width: 17px;" alt=""> </span>
+                <span class="me-1" id="contract" data-value="0xceaeF425930c7100c6515Ce9A5Eb526F27e249f9">0xce...49f9</span>
+                <a href="#" id="copy" style="line-height: 1;color: lightgray;"><i class="lni lni-clipboard" style="font-size: 17px;"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="copy">
+            Copied! <i class="lni lni-checkmark" style="font-size: 17px;line-height:0;"></i>
+          </div>
+          <div class="nav-menu">
+            <div class="container container-lg">
+              <div class="nav-menu-wrap">
+                <div class="nav-menu-inner">
+                  <a href="#banner" class="text-white" style="text-decoration:none;">
+                    <div class="nav-brand me-3">
+                      <img src="images/logo.jpg" class="me-2" alt="">
+                      <h3 class="fw-bold">Hodln</h3>
+                    </div>
+                  </a>
+                  <div class="nav-right">
+                    <div class="nav-pad">
+                      <div class="text-end">
+                        <a href="#" class="mb-3 menu-toggle" id="toggle-off"><i class="lni lni-close" style="font-size: 20px;"></i> </a>
+                      </div>
+                      <div class="">
+                        <ul class="menu">
+                          <li><a href="#section-2">About HDA</a> </li>
+                          <li><a href="#section-3">Featured projects</a> </li>
+                          <li><a href="#section-4">HDA Token</a> </li>
+                          <li><a href="#section-5">Join community</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="nav-btn px-3">
+                      <div class="">
+                        <button type="button" name="button" id="connect_btn" class="connect-btn">Connect Wallet</button>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="menu-toggle" id="toggle-on" style="font-size: 20px;"><i class="lni lni-menu"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="banner">
+      <div class="banner-left">
+        <img src="images/banner.png" alt="">
+      </div>
+      <div class="d-flex h-100 align-items-center justify-content-center">
+        <div class="container container-sm container-sm-sm">
+          <div class="row">
+            <div class="col-lg-7 d-flex align-items-center banner-margin">
+              <div class="">
+                <h1 class="banner-header banner-header1 mb-4">
+                  DeFi founders alliance for new startups incubation and
+                  <span class="red">accelerating projects with investors backed community.</span>
+                </h1>
+                <div class="banner-button-wrap">
+                  <button type="button" class="banner-button red-outline" name="button">Join Community</button>
+                  <button type="button" class="banner-button" name="button">Apply for alliance</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center">
+              <img src="images/banner-logo.png" class="banner-logo" alt="">
+              <img src="images/banner-logo1.png" class="banner-logo banner-logo1" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-2">
+      <div class="container">
+        <div class="text-center container-sm mb-5">
+          <h1 class="fw-bold mb-3">Hodln DeFi <span class="red">Alliance </span></h1>
+          <p class="lightgray accel">Created to be a go-to platform for defi founders to start and grow projects with our alliance program led by experts and existing developers, backed by liquidity providers, launch apps, market makers and investors.</p>
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+          <div class="width-medium">
+            <div class="card glass-card">
+              <div class="card-body card-pad">
+                <div class="quotes">
+                  <div class="quote q-top">
+                    <img src="images/quote.png" alt="">
+                  </div>
+                  <div class="text-center fw-bold lightgray" style="font-size: 20px;">
+                    The best founders want to be backed by other founders
+                  </div>
+                  <div class="quote q-bot">
+                    <img src="images/quote.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center container-sm mt-5">
+          <p class="lightgray accel">An investment arm focused primarily on early-stage projects. By leveraging our network, expertise and range of capabilities, we endeavor to add value and catalyze growth for projects and defi founders. </p>
+        </div>
+      </div>
+    </section>
+    <section id="section-3">
+      <div class="cracks">
+        <img src="images/crack.png" alt="">
+        <img src="images/crack.png" alt="">
+      </div>
+      <div class="container" id="section-3p">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-start mb-5">
+              <h1 class="fw-bold mb-3 banner-header">Accelerator</h1>
+              <p class="mb-4 lightgray accel1">Web3 accelerator and incubator program for new projects. Featured with Hodln DAO community to provide high quality projects, alliance and initial funds needed for launch or developments.</p>
+              <button type="button" class="shadow accel-btn">Application for alliance program opens third quarter<i class="lni lni-chevron-right-circle"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-6 px-5">
+            <h3 class="text-center mb-5">Featured projects</h3>
+            <div class="w-100 d-flex justify-content-center">
+              <div class="featured">
+                <img src="images/sample.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-4">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold mb-3 banner-header">Hodln DeF<span class="red">i Alliance</span> </h1>
+        <div class="phone mb-4">
+          <img src="images/phone.png" alt="">
+        </div>
+        <h4 class="lightgray defi">Leveraged web3 application for projects incubation and acceleration. </h4>
+      </div>
+    </section>
+    <div class="container container-sm">
+      <div class="line">
+      </div>
+    </div>
+    <section id="section-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h1 class="fw-bold mb-3">DAO Com<span class="red">munity</span> </h1>
+          <p class="lightgray defi">Existing founders, web3 experts, service providers and cohorts for startup founders to get access to network, partnerships and investors backed community. </p>
+        </div>
+        <div class="text-center mb-5">
+          <h3 class="darkgray defi">Investors and Founders DAO community benefits</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4 offset-md-2 mb-4">
+            <div class="card dark-card">
+              <div class="card-body p-0">
+                <div class="card-img">
+                  <img src="images/developer.svg" alt="">
+                </div>
+                <div class="card-content p-3">
+                  <h4>For <span class="red fw-bold">developers</span> </h4>
+                  <p class="lightgray">Early access to high quality HDA program projects. Participate and join new startups confidently with assurance from HDA.
+                    Join seed offerings, presale and angels program. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card dark-card">
+              <div class="card-body p-0">
+                <div class="card-img">
+                  <img src="images/investor.svg" alt="">
+                </div>
+                <div class="card-content p-3">
+                  <h4>For <span class="red fw-bold">investors</span> </h4>
+                  <p class="lightgray">Service opportunities for startups including initial liquidity, market making, integrations with access to a valuable web3 investors community, partnerships and HDA alliance programs.  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-6">
+      <div class="road">
+        <img src="images/road.png" alt="">
+        <img src="images/road.png" alt="">
+      </div>
+      <div class="container" id="section-6p">
+        <div class="mb-4">
+          <h1 class="fw-bold mb-5 text-center banner-header">Roadmap</h1>
+        </div>
+        <div class="row mb-5" style="">
+          <div class="col-lg-6 roadmap-left pb-4">
+            <h1 class="roadmap-header">Phase 1</h1>
+          </div>
+          <div class="col-lg-6">
+            <div class="roadmap-card">
+              <h2 class="text-center fw-bold">Q3 & Q4</h2>
+              <ul class="roadmap-list">
+                <li>Formation & alliance establishment</li>
+                <li>DAO community and structure campaigns</li>
+                <li>Smart contract creation, Internal & External audit</li>
+                <li>BNBChain incubator & accelerator developments</li>
+                <li>Token launch</li>
+                <li>Global campaigns and Investors backed community developments</li>
+                <li>First periodic buyback</li>
+                <li>Project integrations and listings</li>
+                <li>Token staking implementation</li>
+                <li>Application launch ETA</li>
+                <li>Alliance programs (Incubator & Accelerator)</li>
+                <li>Hodln venture capitalists formation</li>
+                <li>VC airdrop for holders</li>
+                <li>Phase 2 release</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="">
+          <div class="col-lg-6 order-lg-last roadmap-right pb-4">
+            <h1 class="roadmap-header">Phase 2</h1>
+          </div>
+          <div class="col-lg-6">
+            <div class="roadmap-card2 d-flex align-items-center justify-content-center">
+              <h1 class="lightgray text-center">Coming Soon</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="text-center w-100 d-flex justify-content-center mb-5">
+          <div class="footer-img">
+            <img src="images/logo.jpg" alt="">
+            <img src="images/logo-wide.png" alt="">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <ul class="socials">
+            <li class="link" data-link="https://twitter.com/hodlndefi?s=21&t=FFv1lnSBkygwBWLdBaWQqQ"><a href="https://twitter.com/hodlndefi?s=21&t=FFv1lnSBkygwBWLdBaWQqQ"><i class="lni lni-twitter-original"></i> </a></li>
+            <li class="link" data-link="https://t.me/hodlndefi"><a href="https://t.me/hodlndefi"><i class="lni lni-telegram-original"></i> </a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js" integrity="sha512-QAc08ipPd7ElgrEsKMj9mFi1LOYhEBBeusKfVSXktZSjlm5BIThey5q7IEYtZVixxC+lIN6CnSZCfI4s00Dq3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#toggle-on").click(function(event){
+          event.preventDefault();
+          $(".nav-right").addClass("active");
+        });
+        $("#toggle-off").click(function(event){
+          event.preventDefault();
+          $(".nav-right").removeClass("active");
+        });
+        $("#copy").click(function(event){
+          event.preventDefault();
+          $(".copy").addClass("copied");
+          setTimeout(function(){
+            $(".copy").removeClass("copied");
+          }, 2000);
+          navigator.clipboard.writeText($("#contract").data("value"));
+        })
+        $(".link").click(function(){
+          var link = $(this).data("link");
+          window.location.href = link;
+        });
+        $("body").removeClass("preload");
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        if($(window).scrollTop()>50){
+          $(".nav-menu").toggleClass("scroll");
+          $(".nav-menu").toggleClass("black");
+          $(".connect-btn").toggleClass("scroll");
+          $(".top-contract").toggleClass("scroll");
+        }
+        $(window).scroll(function(){
+          $(".nav-menu").toggleClass("scroll",$(this).scrollTop()>50);
+          setTimeout(function(){
+            $(".nav-menu").toggleClass("black",$(this).scrollTop()>50);
+            $(".connect-btn").toggleClass("scroll",$(this).scrollTop()>50);
+          }, 300)
+          $(".top-contract").toggleClass("scroll",$(this).scrollTop()>50);
+        });
+        if (typeof window.ethereum !== 'undefined') {
+          getChain();
+          async function getChain(){
+            const chainid = await ethereum.request({
+              "jsonrpc": "2.0",
+              "method": "eth_chainId",
+              "params": []
+            });
+            if(chainid!=0x38){
+              await ethereum.request({
+                method: 'wallet_switchEthereumChain',
+                params: [{ chainId: '0x38' }],
+              });
+            }
+            ethereum.on('chainChanged', function(){
+              window.location.reload();
+            });
+          }
+          getAccount();
+          $("#connect_btn").click(function(){
+            getAccount();
+          });
+          async function getAccount() {
+            const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+            const account = accounts[0];
+            var acc = account.substring(0, 4);
+            var leng = account.length ;
+            var leng1 = leng-4;
+            var acc1 = account.substring(leng, leng1);
+            var trunc = acc+"..."+acc1;
+            var wallet = "<i class='fas fa-wallet me-2'></i>"+trunc;
+            $("#connect_btn").html(wallet);
+          }
+        }
+        else{
+          $("#connect_btn").html("Download Metamask");
+          $("#connect_btn").click(function(){
+            window.location.href = "https://metamask.io/download.html";
+            return false;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
